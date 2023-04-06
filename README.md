@@ -26,7 +26,7 @@ In this project, you will create an object in JavaScript that represents your fa
    - `addActor(actorName)`: This method takes an actor's name as an argument and appends it to the `actors` property, which represents the list of actors in the movie.
    - `isPopular()`: This method returns a boolean value indicating whether the movie is popular or not, based on its rating (popular > 8).
    - `summary()`: Prints a paragraph summarizing the movie's information, including the title, year, director, actors, and rating.
-4. Create a copy of the object.
+4. Create a copy of the object. (Hint: You can use the spread operator (...) or the Object.assign() method)
 5. Modify the properties of the new object to represent another favorite movie.
 6. Add a new property called myRating and include your rating of the movie.
 7. Test the object's methods and properties in the console to ensure they function as expected.

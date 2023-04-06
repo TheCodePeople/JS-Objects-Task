@@ -42,3 +42,27 @@ const myFavoriteMovie = {
     );
   },
 };
+
+const newMovie = Object.assign({}, myFavoriteMovie);
+// const newMovie = {...myFavoriteMovie};
+
+// Modify properties of the new object
+newMovie.title = "Suits TV Show";
+newMovie.year = 2011;
+newMovie.director = "Aaron Korsh";
+newMovie.actors =
+  "Gabriel Macht, Patrick J. Adams, Meghan Markle, Sarah Rafferty, Gina Torres, Rick Hoffman";
+newMovie.rating = 8.5;
+newMovie.timesWatched = 3;
+newMovie.myRating = 9.2;
+
+// Test the methods and properties
+newMovie.recommend();
+newMovie.watch();
+newMovie.setRating(8.8);
+newMovie.addActor("Dulé Hill");
+console.log(`Is Popular: ${newMovie.isPopular()}`);
+newMovie.summary();
+
+console.log("🚀 ~ file: object.js:47 ~ movie:", newMovie);
+console.log("🚀 ~ file: object.js:48 ~ myFavoriteMovie:", myFavoriteMovie);
