@@ -12,23 +12,23 @@ In this project, you will create an object in JavaScript that represents your fa
 ## Task Instructions
 
 1. Choose your favorite movie.
-2. Create a JavaScript object that represents a movie with the following properties:
+2. Create a JavaScript object that represents a movie with the following properties: (30 pts)
    - `title` (a string)
    - `year` (a number)
    - `director` (a string)
    - `actors` (a string)
    - `rating` (a number)
    - `timesWatched` (a number, representing the number of times you have watched the movie)
-3. The movie object should also have the following methods:
+3. The movie object should also have the following methods: (40 pts)
    - `recommend()`: Prints a message recommending the movie to a friend.
    - `watch()`: This method increments the `timesWatched` property by 1, representing that the movie has been watched one more time.
    - `setRating(newRating)`: This method takes a new rating as an argument and updates the `rating` property of the movie object with the new value.
    - `addActor(actorName)`: This method takes an actor's name as an argument and appends it to the `actors` property, which represents the list of actors in the movie.
    - `isPopular()`: This method returns a boolean value indicating whether the movie is popular or not, based on its rating (popular > 8).
    - `summary()`: Prints a paragraph summarizing the movie's information, including the title, year, director, actors, and rating.
-4. Create a copy of the object. (Hint: You can use the spread operator (...) or the Object.assign() method)
-5. Modify the properties of the new object to represent another favorite movie.
-6. Add a new property called myRating and include your rating of the movie.
+4. Create a copy of the object. (Hint: You can use the spread operator (...) or the Object.assign() method) (20 pts)
+5. Modify the properties of the new object to represent another favorite movie. (5 pts)
+6. Add a new property called myRating and include your rating of the movie. (5 pts)
 7. Test the object's methods and properties in the console to ensure they function as expected.
 
 ## Submitting the Task
