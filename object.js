@@ -1,66 +1,59 @@
-let movie = {
-  title: "the godfather",
-  year: 1990,
-  director: "Mario Puzo",
-  actors: "Al Pacino , Robert Duvall ",
-  Rating: 10,
-  timesWatched: 1,
+const movies = {
+  title: "the mission impossible 6",
+  year: 2018,
+  director: "Simon Jonathan Pegg",
+  acrot: "Tom Cruise",
+  rating: "8.5",
+  timesWatched: 2,
 
-  recommend: function () {
-    console.log("watch the movie ");
+  recommend() {
+    console.log("شوفة وادعيلي ");
   },
-
-  watch: function () {
+  watch() {
     this.timesWatched++;
   },
-  setRating: function (newRating) {
-    this.Rating = newRating;
+  setRating(newRating) {
+    this.rating = newRating;
   },
-  addActors: function (actorName) {
-    this.actors = +` ${actorName}`;
+  addActor(acterNew) {
+    this.acrot = +`${acterNew}`;
   },
-
-  isPopular: function () {
-    if (this.Rating > 8) {
-      return "is Popular";
+  Popule() {
+    if (this.rating > 8) {
+      console.log("فلم حلو");
     } else {
-      return "is not popular";
+      console.log("مع الاسف جرب غيرة ");
     }
   },
-  summary: function () {
+  summary() {
     console.log(
-      "the title is" +
-        this.title / n +
-        "year" +
+      this.title / n +
         this.year / n +
-        "the director" +
         this.director / n +
-        "the actors are" +
-        this.actors / n +
-        "Rating" +
-        this.Rating / n
+        this.acrot / n +
+        this.rating / n +
+        this.timesWatched
     );
   },
 };
-let movie2 = { ...movie };
-movie2.title = "FURY";
-movie2.year = 2014;
-movie2.director = "David Ayer";
-movie2.actors = "	Brad Pitt , Jon Berntha";
-movie2.Rating = 7;
-movie2.timesWatched = 3;
-movie2.myRating = 9;
+let movies4 = { ...movies };
 
-movie.recommend();
-movie.watch();
-movie.setRating(9.9);
-movie.addActors("Marlon Brando");
-movie.isPopular();
-console.log(movie);
+movies4.title = "the mission impossible 5";
+movies4.year = 2016;
+movies4.rating = "8.2";
 
-movie2.recommend();
-movie2.watch();
-movie2.setRating(8.5);
-movie2.addActors("Shia LaBeouf");
-movie2.isPopular();
-console.log(movie2);
+console.log(movies);
+
+movies.watch();
+movies.setRating(9);
+movies.addActor("abbas");
+movies.Popule();
+movies.recommend();
+
+console.log(movies4);
+
+movies.recommend();
+movies.watch();
+movies.setRating(5);
+movies.addActor("jasem");
+movies.Popule();
